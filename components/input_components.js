@@ -4,8 +4,12 @@ import '../css/styles.css'
 function inputComponent(props) {
     return (
         <div>
-            <label>Label</label><br />
-            <input type={props.type} placeholder={props.placeholder} />
+            <label className="label">Label</label><br />
+            <input 
+                type={props.type} 
+                className={props.name} 
+                placeholder={props.placeholder} 
+            />
         </div>
     )
 }

@@ -1,0 +1,83 @@
+body {
+    max-width: 90vw;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+input {
+    padding-block: 18px;
+    padding-inline-start: 12px;
+    margin-block-start: 16px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+input::placeholder {
+    color: rgba(130, 130, 130, 1);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.default:hover {
+    border: 1px solid black;
+}
+
+.default:focus {
+    border: 1px solid blue;
+}
+
+.error {
+    border: 1px solid rgba(211, 47, 47, 1);
+}
+
+/* label ~ .error {
+    color: rgba(211, 47, 47, 1);
+} */
+
+.error:hover {
+    border: 1px solid black;
+}
+
+.error:focus {
+    border: 1px solid rgba(211, 47, 47, 1);
+}
+
+.disabled {
+    background-color: rgba(242, 242, 242, 1);
+    cursor: not-allowed;
+    pointer-events: none;
+    border: 1px solid rgba(224, 224, 224, 1);
+}
+
+.startIcon {
+    max-width: 120px;
+    background-image: url('../icons/call-24px.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    padding-inline-start: 64px;
+    padding-inline-end: -64px;
+}
+
+.endIcon {
+    background-image: url("../icons/lock-24px.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+.small {
+    padding-block: 10px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.text::placeholder {
+    color: black;
+}
+
+.row_4 {
+    padding-block-end: 173px;
+}
+
