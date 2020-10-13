@@ -28383,19 +28383,7 @@ function inputComponent(props) {
 
 var _default = inputComponent;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../css/styles.css":"css/styles.css"}],"components/textarea.js":[function(require,module,exports) {
-// import React from "rect";
-// function texteArea(props) {
-//     return <textarea 
-//                 className={props.name} 
-//                 placeholder={props.placeholder} 
-//                 rows="4" 
-//                 cols="10"
-//             >
-//             </textarea>
-// }
-// export default texteArea
-},{}],"components/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../css/styles.css":"css/styles.css"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28406,8 +28394,6 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _input_components = _interopRequireDefault(require("./input_components"));
-
-var _textarea = _interopRequireDefault(require("./textarea"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28443,31 +28429,36 @@ function App() {
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", null, "<Input value=\"text\" />"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     type: "text",
     name: "text",
-    rows: "4",
-    cols: "40",
+    value: "text",
     placeholder: "Text"
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", null, "<Input size=\"sm\" />"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     type: "text",
     name: "small",
+    size: "sm",
     placeholder: "Placeholder"
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", null, "<Input size=\"md\" />"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     type: "text",
     name: "medium",
+    size: "md",
     placeholder: "Placeholder"
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", null, "<Input fullWidth/>"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     type: "text",
     name: "fullWidth",
-    placeholder: "Placeholder"
+    placeholder: "Placeholder",
+    fullWidth: true
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", null, "<Input multiline row=\"4\"/>"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     type: "text",
     name: "row_4",
+    row: "4",
+    rows: "4",
+    cols: "20",
     placeholder: "Placeholder"
   })), /*#__PURE__*/_react.default.createElement("br", null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./input_components":"components/input_components.js","./textarea":"components/textarea.js"}],"script.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./input_components":"components/input_components.js"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));

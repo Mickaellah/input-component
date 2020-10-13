@@ -1,7 +1,5 @@
 import React from "react";
-import inputComponent from "./input_components";
 import InputComponent from "./input_components";
-import TextArea from "./textarea";
 
 function App() {
     return (
@@ -67,8 +65,7 @@ function App() {
                 <InputComponent 
                     type="text" 
                     name="text" 
-                    rows="4"
-                    cols="40"
+                    value="text"
                     placeholder="Text" 
                 />
             </div><br />
@@ -77,6 +74,7 @@ function App() {
                 <InputComponent 
                     type="text" 
                     name="small" 
+                    size="sm"
                     placeholder="Placeholder" 
                 />
             </div><br />
@@ -85,6 +83,7 @@ function App() {
                 <InputComponent 
                     type="text" 
                     name="medium" 
+                    size="md"
                     placeholder="Placeholder" 
                 />
             </div><br />
@@ -94,6 +93,7 @@ function App() {
                     type="text" 
                     name="fullWidth" 
                     placeholder="Placeholder" 
+                    fullWidth
                 />
             </div><br />
             <div>
@@ -101,6 +101,9 @@ function App() {
                 <InputComponent 
                     type="text"
                     name="row_4" 
+                    row="4"
+                    rows="4"
+                    cols="20"
                     placeholder="Placeholder" 
                 />
             </div><br />
