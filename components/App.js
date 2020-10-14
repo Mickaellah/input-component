@@ -7,25 +7,39 @@ function App(props) {
             <h1>Input components</h1>
             <form>
                 {`<Input />`}
-                <label style={props.default === focus ? 'color: red' : ''}>Label</label><br />
-                <InputComponent placeholder="Placeholder" default />
+                <label className="label1">
+                    <p>Label</p>
+                    <InputComponent placeholder="Placeholder" default />
+                </label>
                 <br />
                 {`<Input error />`}
-                <InputComponent placeholder="Placeholder" error/>
+                <label className="label2">
+                    <p>Label</p>
+                    <InputComponent placeholder="Placeholder" error/>
+                </label>
                 <br />
                 {`<Input disabled/>`}
-                <InputComponent placeholder="Placeholder" disabled/>
+                <label className="label3">
+                    <p>Label</p>
+                    <InputComponent placeholder="Placeholder" disabled/>
+                </label>
                 <br />
                 <div className="container">
                     <div>
                         {'<Input helperTtext="Some interesting text"/>'}
-                        <InputComponent placeholder="Placeholder" helperText="Some-interesting-text"/>
+                        <label className="label4">
+                            <p>Label</p>
+                            <InputComponent placeholder="Placeholder" helperText="Some-interesting-text"/>
+                        </label>
                         <p>Some interesting text</p>
                     </div>
                     <br />
                     <div>
                         {`<Input helperText="Some-interesting-text" error />`}
-                        <InputComponent placeholder="Placeholder" helperText="Some-interesting-text" textCoror="intresting" error />
+                        <label className="label5">
+                            <p>Label</p>
+                            <InputComponent placeholder="Placeholder" helperText="Some-interesting-text" textCoror="intresting" error />
+                        </label>
                         <p>Some intersting text</p>
                     </div>
                 </div>
@@ -33,35 +47,56 @@ function App(props) {
                 <div className="container">
                     <div>
                         {`<Input startIcon/>`}
-                        <InputComponent placeholder="Placeholder" startIcon />
+                        <label className="label6">
+                            <p>Label</p>
+                            <InputComponent placeholder="Placeholder" startIcon />
+                        </label>
                     </div>
                     <br />
                     <div>
                         {`<Input endIcon />`}
-                        <InputComponent placeholder="Placeholder" endIcon />
+                        <label className="label7">
+                            <p>Label</p>
+                            <InputComponent placeholder="Placeholder" endIcon />
+                        </label>
                     </div>
                 </div>
                 <br />
                 {`<Input value="text" />`}
-                <InputComponent placeholder="Text" value="text"/>
+                <label className="label8">
+                    <p>Label</p>
+                    <InputComponent placeholder="Text" value="text"/>
+                </label>
                 <br />
                 <div className="container">
                     <div>
                         {`<Input size="sm"/>`}
-                        <InputComponent placeholder="Placeholder" size="sm" />
+                        <label>
+                            <p>Label</p>
+                            <InputComponent placeholder="Placeholder" size="sm" />
+                        </label>
                     </div>
                     <br />
                     <div>
                         {`<Input size="md" />`}
-                        <InputComponent placeholder="Placeholder" size="md" />
+                        <label>
+                            <p>Label</p>
+                            <InputComponent placeholder="Placeholder" size="md" />
+                        </label>
                     </div>
                 </div>
                 <br />
                 {`<Input fullWidth />`}
-                <InputComponent placeholder="Text" fullWidth />
+                <label>
+                    <p>Label</p>
+                    <InputComponent placeholder="Text" fullWidth />
+                </label>
                 <br />
                 {`<Input multiline row="4" />`}
-                <InputComponent placeholder="Placeholder" row="4" multiline />
+                <label>
+                    <p>Label</p>
+                    <InputComponent placeholder="Placeholder" row="4" multiline />
+                </label>
             </form>
         </main>
     );

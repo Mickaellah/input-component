@@ -26,15 +26,12 @@ function inputComponent(props) {
     if (props.fullWidth) {
         classes = `${classes} bttn--fullWidth`;
     }
-     if (props.helperText) {
+    if (props.helperText) {
         classes = `${classes} bttn--${props.helperText}`;
     }
 
-    return (
-        <div>
-            <input className={classes} disabled={props.disabled} placeholder={props.placeholder} />
-        </div>
-    )
+    return <input className={classes} disabled={props.disabled} placeholder={props.placeholder} />
+
 }
 
 export default inputComponent

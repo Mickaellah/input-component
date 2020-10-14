@@ -16,6 +16,7 @@ h1 {
     justify-content: space-between;
 }
 
+
 input {
     padding-block: 18px;
     padding-inline-start: 12px;
@@ -23,12 +24,17 @@ input {
     border-radius: 8px;
     outline: none;
     border: 1px solid gray;
+    margin-block-end: 16px;
 }
 
 input::placeholder {
     color: rgba(130, 130, 130, 1);
     font-weight: 500;
     font-size: 14px;
+}
+
+.label1:focus-within p {
+    color: blue;
 }
 
 .bttn--default:hover {
@@ -47,12 +53,24 @@ input::placeholder {
     border: 1px solid rgba(211, 47, 47, 1);
 }
 
-.bttn--error:focus ~ label {
-    color: red;
+.label2 p {
+    color: rgba(211, 47, 47, 1);
 }
 
 .bttn--error:hover {
     border: 1px solid black;
+}
+
+.bttn--error:hover {
+    border: 1px solid black;
+}
+
+.label2:hover p {
+    color: black;
+}
+
+.label2:focus-within p {
+    color: rgba(211, 47, 47, 1);
 }
 
 .bttn--error:focus {
@@ -63,12 +81,22 @@ input::placeholder {
     background-color: rgba(242, 242, 242, 1);
     cursor: not-allowed;
     pointer-events: none;
+}
+
+.label3 input {
     border: 1px solid rgba(224, 224, 224, 1);
 }
 
-p {
+.label4 + p {
+    color: rgba(130, 130, 130, 1);
+}
+
+.label5 > p {
     color: rgba(211, 47, 47, 1);
-    size: 14px;
+}
+
+.label5 + p {
+    color: rgba(211, 47, 47, 1);
 }
 
 .bttn--startIcon {
