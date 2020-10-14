@@ -11,6 +11,12 @@ function inputComponent(props) {
     if (props.error) {
         classes = `${classes} bttn--error`;
     }
+    if (props.startIcon) {
+        classes = `${classes} bttn--startIcon`;
+    }
+    if (props.endIcon) {
+        classes = `${classes} bttn--endIcon`;
+    }
     if (props.size) {
         classes = `${classes} bttn--${props.size}`;
     }
@@ -26,7 +32,7 @@ function inputComponent(props) {
 
     return (
         <div>
-            {label}
+            <label>Label</label><br />
             <input className={classes} disabled={props.disabled} placeholder={props.placeholder} />
         </div>
         

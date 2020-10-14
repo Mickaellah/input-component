@@ -25,14 +25,6 @@ input::placeholder {
     font-size: 14px;
 }
 
-/* .bttn:hover {
-    border: 1px solid black;
-}
-
-.bttn:focus {
-    border: 1px solid blue;
-} */
-
 .bttn--default:hover {
     border: 1px solid black;
 }
@@ -83,6 +75,10 @@ input::placeholder {
     border: rgba(130, 130, 130, 1);
 }
 
+.bttn--text::placeholder {
+    color: black;
+}
+
 .bttn .bttn--text:hover,
 .bttn .bttn--text:focus {
     border: rgba(130, 130, 130, 1);
@@ -98,11 +94,11 @@ input::placeholder {
     width: 100%;
 }
 
-.bttn--text::placeholder {
+.bttn--fullWidth::placeholder {
     color: black;
 }
 
-.bttn--row_4 {
+.bttn--4 {
     padding-block-end: 173px;
 }
 

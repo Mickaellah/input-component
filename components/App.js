@@ -30,12 +30,12 @@ function App() {
                 <div className="container">
                     <div>
                         {`<Input startIcon/>`}
-                        <InputComponent placeholder="Placeholder" startIcon/>
+                        <InputComponent placeholder="Placeholder" startIcon />
                     </div>
                     <br />
                     <div>
                         {`<Input endIcon />`}
-                        <InputComponent placeholder="Placeholder" endIcon/>
+                        <InputComponent placeholder="Placeholder" endIcon />
                     </div>
                 </div>
                 <br />

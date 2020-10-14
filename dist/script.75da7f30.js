@@ -28383,6 +28383,14 @@ function inputComponent(props) {
     classes = "".concat(classes, " bttn--error");
   }
 
+  if (props.startIcon) {
+    classes = "".concat(classes, " bttn--startIcon");
+  }
+
+  if (props.endIcon) {
+    classes = "".concat(classes, " bttn--endIcon");
+  }
+
   if (props.size) {
     classes = "".concat(classes, " bttn--").concat(props.size);
   }
@@ -28399,7 +28407,7 @@ function inputComponent(props) {
     classes = "".concat(classes, " bttn--").concat(props.helperText);
   }
 
-  return /*#__PURE__*/_react.default.createElement("div", null, label, /*#__PURE__*/_react.default.createElement("input", {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("input", {
     className: classes,
     disabled: props.disabled,
     placeholder: props.placeholder
