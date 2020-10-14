@@ -1,7 +1,13 @@
 body {
-    max-width: 90vw;
+    max-width: 70vw;
     margin-inline-start: auto;
     margin-inline-end: auto;
+    background-color: aliceblue;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px deeppink;
 }
 
 .container {
@@ -29,12 +35,20 @@ input::placeholder {
     border: 1px solid black;
 }
 
+.bttn--default:focus-within .label {
+    color: blue !important;
+}
+
 .bttn--default:focus {
     border: 1px solid blue;
 }
 
 .bttn--error {
     border: 1px solid rgba(211, 47, 47, 1);
+}
+
+.bttn--error:focus ~ label {
+    color: red;
 }
 
 .bttn--error:hover {
@@ -52,8 +66,9 @@ input::placeholder {
     border: 1px solid rgba(224, 224, 224, 1);
 }
 
-.bttn--helperText {
-
+p {
+    color: rgba(211, 47, 47, 1);
+    size: 14px;
 }
 
 .bttn--startIcon {

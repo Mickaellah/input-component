@@ -27,15 +27,13 @@ function inputComponent(props) {
         classes = `${classes} bttn--fullWidth`;
     }
      if (props.helperText) {
-        classes = `${classes} bttn--${props.helperText}`
+        classes = `${classes} bttn--${props.helperText}`;
     }
 
     return (
         <div>
-            <label>Label</label><br />
             <input className={classes} disabled={props.disabled} placeholder={props.placeholder} />
         </div>
-        
     )
 }
 

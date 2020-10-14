@@ -1,12 +1,13 @@
 import React from "react";
 import InputComponent from "./input_components";
 
-function App() {
+function App(props) {
     return (
         <main>
             <h1>Input components</h1>
             <form>
                 {`<Input />`}
+                <label style={props.default === focus ? 'color: red' : ''}>Label</label><br />
                 <InputComponent placeholder="Placeholder" default />
                 <br />
                 {`<Input error />`}
@@ -18,12 +19,14 @@ function App() {
                 <div className="container">
                     <div>
                         {'<Input helperTtext="Some interesting text"/>'}
-                        <InputComponent placeholder="Placeholder" helperText="Some intersting text"/>
+                        <InputComponent placeholder="Placeholder" helperText="Some-interesting-text"/>
+                        <p>Some interesting text</p>
                     </div>
                     <br />
                     <div>
-                        {`<Input helperText="Some interesting text" error />`}
-                        <InputComponent placeholder="Placeholder" helperText="Some interesting text" error />
+                        {`<Input helperText="Some-interesting-text" error />`}
+                        <InputComponent placeholder="Placeholder" helperText="Some-interesting-text" textCoror="intresting" error />
+                        <p>Some intersting text</p>
                     </div>
                 </div>
                 <br />

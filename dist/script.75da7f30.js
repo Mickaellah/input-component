@@ -28407,7 +28407,7 @@ function inputComponent(props) {
     classes = "".concat(classes, " bttn--").concat(props.helperText);
   }
 
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("input", {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("input", {
     className: classes,
     disabled: props.disabled,
     placeholder: props.placeholder
@@ -28430,8 +28430,10 @@ var _input_components = _interopRequireDefault(require("./input_components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function App() {
-  return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h1", null, "Input components"), /*#__PURE__*/_react.default.createElement("form", null, "<Input />", /*#__PURE__*/_react.default.createElement(_input_components.default, {
+function App(props) {
+  return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h1", null, "Input components"), /*#__PURE__*/_react.default.createElement("form", null, "<Input />", /*#__PURE__*/_react.default.createElement("label", {
+    style: props.default === focus ? 'color: red' : ''
+  }, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     default: true
   }), /*#__PURE__*/_react.default.createElement("br", null), "<Input error />", /*#__PURE__*/_react.default.createElement(_input_components.default, {
@@ -28444,12 +28446,13 @@ function App() {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", null, '<Input helperTtext="Some interesting text"/>', /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
-    helperText: "Some intersting text"
-  })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, "<Input helperText=\"Some interesting text\" error />", /*#__PURE__*/_react.default.createElement(_input_components.default, {
+    helperText: "Some-interesting-text"
+  }), /*#__PURE__*/_react.default.createElement("p", null, "Some interesting text")), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, "<Input helperText=\"Some-interesting-text\" error />", /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
-    helperText: "Some interesting text",
+    helperText: "Some-interesting-text",
+    textCoror: "intresting",
     error: true
-  }))), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+  }), /*#__PURE__*/_react.default.createElement("p", null, "Some intersting text"))), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", null, "<Input startIcon/>", /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
