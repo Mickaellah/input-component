@@ -1,4 +1,19 @@
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: local('NotoSansJP-Regular-Alphabetic'),
+        local('NotoSansJP-Regular-Alphabetic');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins-Regular'),
+        local('Poppins-Regular');
+    font-weight: 600;
+}
+
 body {
+    font-family: 'Noto Sans JP';
     max-width: 70vw;
     margin-inline-start: auto;
     margin-inline-end: auto;
@@ -6,6 +21,7 @@ body {
 }
 
 h1 {
+    font-family: 'Poppins';
     text-transform: uppercase;
     text-shadow: 2px 2px 2px deeppink;
 }
