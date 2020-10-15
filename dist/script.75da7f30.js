@@ -28457,29 +28457,29 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function App(props) {
   return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h1", null, "Input components"), /*#__PURE__*/_react.default.createElement("form", null, "<Input />", /*#__PURE__*/_react.default.createElement("label", {
     className: "label1"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Default input"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     default: true
   })), /*#__PURE__*/_react.default.createElement("br", null), "<Input error />", /*#__PURE__*/_react.default.createElement("label", {
     className: "label2"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Input with error"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     error: true
   })), /*#__PURE__*/_react.default.createElement("br", null), "<Input disabled/>", /*#__PURE__*/_react.default.createElement("label", {
     className: "label3"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Disabled input"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     disabled: true
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", null, '<Input helperTtext="Some interesting text"/>', /*#__PURE__*/_react.default.createElement("label", {
     className: "label4"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Input with some text underneath"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     helperText: "Some-interesting-text"
   })), /*#__PURE__*/_react.default.createElement("p", null, "Some interesting text")), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, "<Input helperText=\"Some-interesting-text\" error />", /*#__PURE__*/_react.default.createElement("label", {
     className: "label5"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Input with some text underneath that is colored"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     helperText: "Some-interesting-text",
     textCoror: "intresting",
@@ -28488,33 +28488,34 @@ function App(props) {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", null, "<Input startIcon/>", /*#__PURE__*/_react.default.createElement("label", {
     className: "label6"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Input with startIcon"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     startIcon: true
   }))), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, "<Input endIcon />", /*#__PURE__*/_react.default.createElement("label", {
     className: "label7"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Input with endIcon"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     endIcon: true
   })))), /*#__PURE__*/_react.default.createElement("br", null), "<Input value=\"text\" />", /*#__PURE__*/_react.default.createElement("label", {
     className: "label8"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Text"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Text",
     value: "text"
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement("div", null, "<Input size=\"sm\"/>", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }, /*#__PURE__*/_react.default.createElement("div", null, "<Input size=\"sm\"/>", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Small sized input"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     size: "sm"
-  }))), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, "<Input size=\"md\" />", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  }))), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", null, "<Input size=\"md\" />", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Medium sized input"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Placeholder",
     size: "md"
-  })))), /*#__PURE__*/_react.default.createElement("br", null), "<Input fullWidth />", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
+  })))), /*#__PURE__*/_react.default.createElement("br", null), "<Input fullWidth />", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "FullWidth input"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Text",
     fullWidth: true
-  })), /*#__PURE__*/_react.default.createElement("br", null), "<Input multiline row=\"4\" />", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_TextArea_component.default, {
+  })), /*#__PURE__*/_react.default.createElement("br", null), "<Input multiline row=\"4\" />", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Multiline input"), /*#__PURE__*/_react.default.createElement(_TextArea_component.default, {
     row: "4",
-    placeholder: "Placeholder"
+    placeholder: "Placeholder",
+    multiline: true
   }))));
 }
 

@@ -112,12 +112,13 @@ label p {
     color: rgba(130, 130, 130, 1);
 }
 
-.label5 > p {
+.label5 > p,
+.label5 + p {
     color: rgba(211, 47, 47, 1);
 }
 
-.label5 + p {
-    color: rgba(211, 47, 47, 1);
+.label5 input:hover {
+    border: 1px solid rgba(211, 47, 47, 1);
 }
 
 .bttn--startIcon {

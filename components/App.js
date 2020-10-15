@@ -9,19 +9,19 @@ function App(props) {
             <form>
                 {`<Input />`}
                 <label className="label1">
-                    <p>Label</p>
+                    <p>Default input</p>
                     <InputComponent placeholder="Placeholder" default />
                 </label>
                 <br />
                 {`<Input error />`}
                 <label className="label2">
-                    <p>Label</p>
+                    <p>Input with error</p>
                     <InputComponent placeholder="Placeholder" error/>
                 </label>
                 <br />
                 {`<Input disabled/>`}
                 <label className="label3">
-                    <p>Label</p>
+                    <p>Disabled input</p>
                     <InputComponent placeholder="Placeholder" disabled/>
                 </label>
                 <br />
@@ -29,7 +29,7 @@ function App(props) {
                     <div>
                         {'<Input helperTtext="Some interesting text"/>'}
                         <label className="label4">
-                            <p>Label</p>
+                            <p>Input with some text underneath</p>
                             <InputComponent placeholder="Placeholder" helperText="Some-interesting-text"/>
                         </label>
                         <p>Some interesting text</p>
@@ -38,7 +38,7 @@ function App(props) {
                     <div>
                         {`<Input helperText="Some-interesting-text" error />`}
                         <label className="label5">
-                            <p>Label</p>
+                            <p>Input with some text underneath that is colored</p>
                             <InputComponent placeholder="Placeholder" helperText="Some-interesting-text" textCoror="intresting" error />
                         </label>
                         <p>Some intersting text</p>
@@ -49,7 +49,7 @@ function App(props) {
                     <div>
                         {`<Input startIcon/>`}
                         <label className="label6">
-                            <p>Label</p>
+                            <p>Input with startIcon</p>
                             <InputComponent placeholder="Placeholder" startIcon />
                         </label>
                     </div>
@@ -57,7 +57,7 @@ function App(props) {
                     <div>
                         {`<Input endIcon />`}
                         <label className="label7">
-                            <p>Label</p>
+                            <p>Input with endIcon</p>
                             <InputComponent placeholder="Placeholder" endIcon />
                         </label>
                     </div>
@@ -65,7 +65,7 @@ function App(props) {
                 <br />
                 {`<Input value="text" />`}
                 <label className="label8">
-                    <p>Label</p>
+                    <p>Text</p>
                     <InputComponent placeholder="Text" value="text"/>
                 </label>
                 <br />
@@ -73,7 +73,7 @@ function App(props) {
                     <div>
                         {`<Input size="sm"/>`}
                         <label>
-                            <p>Label</p>
+                            <p>Small sized input</p>
                             <InputComponent placeholder="Placeholder" size="sm" />
                         </label>
                     </div>
@@ -81,7 +81,7 @@ function App(props) {
                     <div>
                         {`<Input size="md" />`}
                         <label>
-                            <p>Label</p>
+                            <p>Medium sized input</p>
                             <InputComponent placeholder="Placeholder" size="md" />
                         </label>
                     </div>
@@ -89,14 +89,14 @@ function App(props) {
                 <br />
                 {`<Input fullWidth />`}
                 <label>
-                    <p>Label</p>
+                    <p>FullWidth input</p>
                     <InputComponent placeholder="Text" fullWidth />
                 </label>
                 <br />
                 {`<Input multiline row="4" />`}
                 <label>
-                    <p>Label</p>
-                    <TextArea row="4" placeholder="Placeholder"/>
+                    <p>Multiline input</p>
+                    <TextArea row="4" placeholder="Placeholder" multiline/>
                 </label>
             </form>
         </main>
