@@ -1,5 +1,6 @@
 import React from "react";
 import InputComponent from "./input_components";
+import TextArea from "./TextArea_component";
 
 function App(props) {
     return (
@@ -95,7 +96,7 @@ function App(props) {
                 {`<Input multiline row="4" />`}
                 <label>
                     <p>Label</p>
-                    <InputComponent placeholder="Placeholder" row="4" multiline />
+                    <TextArea row="4" placeholder="Placeholder"/>
                 </label>
             </form>
         </main>

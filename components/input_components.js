@@ -30,7 +30,7 @@ function inputComponent(props) {
         classes = `${classes} bttn--${props.helperText}`;
     }
 
-    return <input className={classes} disabled={props.disabled} placeholder={props.placeholder} />
+    return <input type={props.type} className={classes} disabled={props.disabled} placeholder={props.placeholder} />
 
 }
 

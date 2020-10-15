@@ -28408,6 +28408,7 @@ function inputComponent(props) {
   }
 
   return /*#__PURE__*/_react.default.createElement("input", {
+    type: props.type,
     className: classes,
     disabled: props.disabled,
     placeholder: props.placeholder
@@ -28416,7 +28417,28 @@ function inputComponent(props) {
 
 var _default = inputComponent;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../css/styles.css":"css/styles.css"}],"components/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../css/styles.css":"css/styles.css"}],"components/TextArea_component.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function TextArea(props) {
+  return /*#__PURE__*/_react.default.createElement("textarea", {
+    rows: props.row,
+    placeholder: props.placeholder
+  });
+}
+
+var _default = TextArea;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28427,6 +28449,8 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _input_components = _interopRequireDefault(require("./input_components"));
+
+var _TextArea_component = _interopRequireDefault(require("./TextArea_component"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28488,16 +28512,15 @@ function App(props) {
   })))), /*#__PURE__*/_react.default.createElement("br", null), "<Input fullWidth />", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
     placeholder: "Text",
     fullWidth: true
-  })), /*#__PURE__*/_react.default.createElement("br", null), "<Input multiline row=\"4\" />", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_input_components.default, {
-    placeholder: "Placeholder",
+  })), /*#__PURE__*/_react.default.createElement("br", null), "<Input multiline row=\"4\" />", /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("p", null, "Label"), /*#__PURE__*/_react.default.createElement(_TextArea_component.default, {
     row: "4",
-    multiline: true
+    placeholder: "Placeholder"
   }))));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./input_components":"components/input_components.js"}],"script.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./input_components":"components/input_components.js","./TextArea_component":"components/TextArea_component.js"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28537,7 +28560,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63415" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53909" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
