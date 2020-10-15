@@ -32,9 +32,9 @@ textarea {
     padding-inline-start: 12px;
     margin-block-start: 16px;
     border-radius: 8px;
-    outline: none;
     border: 1px solid gray;
     margin-block-end: 16px;
+    resize: none;
 }
 
 input::placeholder,
@@ -58,19 +58,20 @@ label p {
     color: blue;
 }
 
-.bttn--default:hover {
+.input--default:hover {
     border: 1px solid black;
 }
 
-.bttn--default:focus-within .label {
+.input--default:focus-within .label {
     color: blue !important;
 }
 
-.bttn--default:focus {
+.input--default:focus {
     border: 1px solid blue;
+    outline: blue;
 }
 
-.bttn--error {
+.input--error {
     border: 1px solid rgba(211, 47, 47, 1);
 }
 
@@ -78,11 +79,11 @@ label p {
     color: rgba(211, 47, 47, 1);
 }
 
-.bttn--error:hover {
+.input--error:hover {
     border: 1px solid black;
 }
 
-.bttn--error:hover {
+.input--error:hover {
     border: 1px solid black;
 }
 
@@ -94,8 +95,9 @@ label p {
     color: rgba(211, 47, 47, 1);
 }
 
-.bttn--error:focus {
+.input--error:focus {
     border: 1px solid rgba(211, 47, 47, 1);
+    outline: rgba(211, 47, 47, 1);
 }
 
 .disabled {
@@ -121,7 +123,7 @@ label p {
     border: 1px solid rgba(211, 47, 47, 1);
 }
 
-.bttn--startIcon {
+.input--startIcon {
     max-width: 120px;
     background-image: url('../icons/call-24px.svg');
     background-position: 10% 50%;
@@ -130,35 +132,35 @@ label p {
     padding-inline-end: -64px;
 }
 
-.bttn--endIcon {
+.input--endIcon {
     background-image: url("../icons/lock-24px.svg");
     background-repeat: no-repeat;
     background-position: 90% 50%;
 }
 
-.bttn .bttn--text {
+.input .input--text {
     border: rgba(130, 130, 130, 1);
 }
 
-.bttn--text::placeholder {
+.input--text::placeholder {
     color: black;
 }
 
-.bttn .bttn--text:hover,
-.bttn .bttn--text:focus {
+.input .input--text:hover,
+.input .input--text:focus {
     border: rgba(130, 130, 130, 1);
 }
 
 
 
-.bttn--sm {
+.input--sm {
     padding-block: 10px;
 }
 
-.bttn--fullWidth {
+.input--fullWidth {
     width: 100%;
 }
 
-.bttn--fullWidth::placeholder {
+.input--fullWidth::placeholder {
     color: black;
 }

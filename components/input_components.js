@@ -2,32 +2,31 @@ import React from "react";
 import '../css/styles.css'
 
 function inputComponent(props) {
-    const label = props.label || props.children;
-    let classes = props.value ? `bttn bttn--${props.value}` : 'bttn';
+    let classes = props.value ? `input input--${props.value}` : 'input';
 
     if (props.default) {
-        classes = `${classes} bttn--default`;
+        classes = `${classes} input--default`;
     }
     if (props.error) {
-        classes = `${classes} bttn--error`;
+        classes = `${classes} input--error`;
     }
     if (props.startIcon) {
-        classes = `${classes} bttn--startIcon`;
+        classes = `${classes} input--startIcon`;
     }
     if (props.endIcon) {
-        classes = `${classes} bttn--endIcon`;
+        classes = `${classes} input--endIcon`;
     }
     if (props.size) {
-        classes = `${classes} bttn--${props.size}`;
+        classes = `${classes} input--${props.size}`;
     }
     if (props.row) {
-        classes = `${classes} bttn--${props.row}`;
+        classes = `${classes} input--${props.row}`;
     } 
     if (props.fullWidth) {
-        classes = `${classes} bttn--fullWidth`;
+        classes = `${classes} input--fullWidth`;
     }
     if (props.helperText) {
-        classes = `${classes} bttn--${props.helperText}`;
+        classes = `${classes} input--${props.helperText}`;
     }
 
     return <input type={props.type} className={classes} disabled={props.disabled} placeholder={props.placeholder} />

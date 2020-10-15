@@ -28372,39 +28372,38 @@ require("../css/styles.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function inputComponent(props) {
-  var label = props.label || props.children;
-  var classes = props.value ? "bttn bttn--".concat(props.value) : 'bttn';
+  var classes = props.value ? "input input--".concat(props.value) : 'input';
 
   if (props.default) {
-    classes = "".concat(classes, " bttn--default");
+    classes = "".concat(classes, " input--default");
   }
 
   if (props.error) {
-    classes = "".concat(classes, " bttn--error");
+    classes = "".concat(classes, " input--error");
   }
 
   if (props.startIcon) {
-    classes = "".concat(classes, " bttn--startIcon");
+    classes = "".concat(classes, " input--startIcon");
   }
 
   if (props.endIcon) {
-    classes = "".concat(classes, " bttn--endIcon");
+    classes = "".concat(classes, " input--endIcon");
   }
 
   if (props.size) {
-    classes = "".concat(classes, " bttn--").concat(props.size);
+    classes = "".concat(classes, " input--").concat(props.size);
   }
 
   if (props.row) {
-    classes = "".concat(classes, " bttn--").concat(props.row);
+    classes = "".concat(classes, " input--").concat(props.row);
   }
 
   if (props.fullWidth) {
-    classes = "".concat(classes, " bttn--fullWidth");
+    classes = "".concat(classes, " input--fullWidth");
   }
 
   if (props.helperText) {
-    classes = "".concat(classes, " bttn--").concat(props.helperText);
+    classes = "".concat(classes, " input--").concat(props.helperText);
   }
 
   return /*#__PURE__*/_react.default.createElement("input", {
