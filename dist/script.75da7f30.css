@@ -26,14 +26,8 @@ h1 {
     text-shadow: 2px 2px 2px deeppink;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-input {
+input,
+textarea {
     padding-block: 18px;
     padding-inline-start: 12px;
     margin-block-start: 16px;
@@ -43,10 +37,21 @@ input {
     margin-block-end: 16px;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: rgba(130, 130, 130, 1);
     font-weight: 500;
     font-size: 14px;
+}
+
+label p {
+    margin-block-end: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .label1:focus-within p {
@@ -156,11 +161,5 @@ input::placeholder {
 .bttn--fullWidth::placeholder {
     color: black;
 }
-
-/* .bttn--4 {
-    padding-block-end: 173px;
-} */
-
-
 
 /*# sourceMappingURL=/script.75da7f30.css.map */
