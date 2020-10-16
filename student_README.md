@@ -75,6 +75,5 @@ $ npm start
 
 ## Contact
 
--   Website [your-website.com](https://{your-web-site-link})
 -   GitHub [@Mickaellah](https://github.com/Mickaellah/)
--   Email [@Clopedia Nomenjanahary](nomenjanahary.clopedia@gmail.com)
+-   Email [@Clopedia Nomenjanahary](mailto:nomenjanahary.clopedia@gmail.com)
