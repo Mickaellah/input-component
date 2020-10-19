@@ -45,9 +45,6 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 -   [React](https://reactjs.org/)
 
-## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 ## How To Use
 
@@ -74,19 +71,6 @@ $ npm start
 -   [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contact
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 -   GitHub [@Mickaellah](https://github.com/Mickaellah/)
 -   Email [@Clopedia Nomenjanahary](mailto:nomenjanahary.clopedia@gmail.com)
